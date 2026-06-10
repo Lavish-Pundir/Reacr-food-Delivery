@@ -38,11 +38,11 @@ function Home() {
 
             {
                 !input ?
-                    <div className='flex flex-wrap justify-center items-center gap-6 w-full'>
+                    <div className='grid grid-cols-4 sm:flex sm:flex-wrap justify-center items-center gap-3 sm:gap-5 w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-8 lg:px-10'>
                         {
                             Categories.map((item) => {
                                 return (
-                                    <div key={item.id} className='w-35 h-38 bg-white flex flex-col items-start gap-5 p-5 justify-start text-[20px] font-semibold text-gray-500 rounded-lg shadow-xl hover:bg-green-200 cursor-pointer transition-all duration-200'
+                                    <div key={item.id} className='w-full sm:w-35 h-24 sm:h-38 bg-white flex flex-col items-start gap-3 sm:gap-5 p-3 sm:p-5 justify-start text-[14px] sm:text-[20px] font-semibold text-gray-500 rounded-lg shadow-xl hover:bg-green-200 cursor-pointer transition-all duration-200'
                                         onClick={() => filter(item.name)}
                                     >
                                         {item.icon}
@@ -55,9 +55,9 @@ function Home() {
             }
 
 
-            <div className='w-full flex flex-wrap gap-5 px-5 justify-center items-center p-8 pb-8'>
+            <div className='w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 lg:gap-5 px-3 sm:px-6 md:px-8 lg:px-10 py-5 sm:py-7 pb-8 justify-items-center'>
                 {
-                    cate.length > 1 ?
+                    cate.length > 0 ?
                         cate.map((item) => (
                             <Card
                                 key={item.id}
@@ -75,7 +75,7 @@ function Home() {
 
             </div>
 
-            <div className={`w-full md:w-[35vw] h-full fixed top-0 right-0 bg-white shado-xl p-6 transition-all duration-500 flex flex-col items-center overflow-auto ${showCart ? "translate-x-0" : "translate-x-full "}`}
+            <div className={`w-full sm:max-w-md lg:w-[35vw] lg:max-w-none h-full fixed top-0 right-0 bg-white shadow-xl p-5 sm:p-6 transition-all duration-500 flex flex-col items-center overflow-auto z-50 ${showCart ? "translate-x-0" : "translate-x-full "}`}
             >
                 <header className='w-full flex justify-between items-center'>
                     <span className='text-green-400 text-[20px] font-semibold'>Order Items</span>

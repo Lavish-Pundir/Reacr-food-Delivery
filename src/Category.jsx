@@ -8,37 +8,37 @@ const Categories = [
     {
         id: 1,
         name: "All",
-        icon: <TiThSmallOutline className="w-15 h-15 text-green-600" />
+        icon: <TiThSmallOutline className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 2,
         name: "breakfast",
-        icon: <MdOutlineFreeBreakfast className="w-15 h-15 text-green-600" />
+        icon: <MdOutlineFreeBreakfast className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 3,
         name: "soups",
-        icon: <TbSoup className="w-15 h-15 text-green-600" />
+        icon: <TbSoup className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 4,
         name: "pasta",
-        icon: <CiBowlNoodles className="w-15 h-15 text-green-600" />
+        icon: <CiBowlNoodles className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 5,
         name: "main_course",
-        icon: <MdOutlineFoodBank className="w-15 h-15 text-green-600" />
+        icon: <MdOutlineFoodBank className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 6,
         name: "pizza",
-        icon: <GiFullPizza className="w-15 h-15 text-green-600" />
+        icon: <GiFullPizza className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
     {
         id: 7,
         name: "burger",
-        icon: <GiHamburger className="w-15 h-15 text-green-600" />
+        icon: <GiHamburger className="w-10 h-10 sm:w-15 sm:h-15 text-green-600" />
     },
 ]
 
