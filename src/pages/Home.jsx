@@ -38,7 +38,7 @@ function Home() {
 
             {
                 !input ?
-                    <div className='grid grid-cols-4 sm:flex sm:flex-wrap justify-center items-center gap-3 sm:gap-5 w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-8 lg:px-10'>
+                    <div className='grid grid-cols-3 sm:flex sm:flex-wrap justify-center items-center gap-3 sm:gap-5 w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-8 lg:px-10'>
                         {
                             Categories.map((item) => {
                                 return (
